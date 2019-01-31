@@ -1,0 +1,7 @@
+if [ -e /etc/bashrc ]; then
+    source /etc/bashrc
+fi
+
+# Add a pystartup for an improved REPL experience
+# export PYTHONSTARTUP=/usr/local/bin/pystartup.py
+export PS1='\u@\h:\W \$ '

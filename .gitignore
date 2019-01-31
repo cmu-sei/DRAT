@@ -1,0 +1,15 @@
+*.pyc
+*.log
+.DS_Store
+.idea
+.vscode
+src/*_files.txt
+src/*_packages.txt
+src/private_key
+.pytest_cache/
+docker/pg_backup/iac_db_backup_????????_??????.sqlc*
+ca/
+orb/
+ssh/
+src/output/
+vagrant/.vagrant

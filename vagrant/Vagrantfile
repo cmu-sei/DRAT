@@ -1,0 +1,37 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  
+  config.vm.box = "centos/7"
+  config.vm.synced_folder ".", "/vagrant"
+
+  config.ssh.pty = true
+  config.ssh.insert_key = true
+
+  # VirtualBox Configuration
+  config.vbguest.auto_update = true
+  config.vbguest.no_remote = true
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = false
+    # Fix for vb 0day e1000 guest escape
+    vb.default_nic_type = "virtio"
+    vb.name = "test"
+    vb.memory = "2048"
+  end
+
+  # Proxy Configuration - uncomment and edit if you have to use a proxy server
+  # to access the outside world.  
+  #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  # config.proxy.http         = "http://your_proxy_server_here:3128"
+  # config.proxy.https        = "http://your_proxy_server_here:3128"
+  # config.proxy.ftp          = "http://your_proxy_server_here:3128"
+  # config.proxy.no_proxy     = "localhost,127.0.0.1,your_internal_domain.com"
+
+  config.vm.provision "shell", :inline => <<-SCRIPT
+  	yum -y update    
+  	yum -y upgrade
+  SCRIPT
+
+end

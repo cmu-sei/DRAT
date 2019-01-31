@@ -1,0 +1,113 @@
+DRAT Prototype Tool Source Code
+Copyright 2019 Carnegie Mellon University. All Rights Reserved.
+
+MIT (SEI)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of 
+this software and associated documentation files (the "Software"), to deal in 
+the Software without restriction, including without limitation the rights to 
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies 
+of the Software, and to permit persons to whom the Software is furnished to do 
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+DRAT Prototype Tool Source Code includes and/or can make use of certain third 
+party software ("Third Party Software"). The Third Party Software that is used 
+by DRAT Prototype Tool Source Code is dependent upon your system configuration, 
+but typically includes the software identified below. By using DRAT Prototype 
+Tool Source Code, You agree to comply with any and all relevant Third Party 
+Software terms and conditions contained in any such Third Party Software or 
+separate license file distributed with such Third Party Software. The parties 
+who own the Third Party Software ("Third Party Licensors") are intended third 
+party beneficiaries to this License with respect to the terms applicable to 
+their Third Party Software. Third Party Software licenses only apply to the 
+Third Party Software and not any other portion of DRAT Prototype Tool Source 
+Code or DRAT Prototype Tool Source Code as a whole.
+
+This material is based upon work funded and supported by the Department of 
+Defense under Contract No. FA8702-15-D-0002 with Carnegie Mellon University 
+for the operation of the Software Engineering Institute, a federally funded 
+research and development center.
+
+The view, opinions, and/or findings contained in this material are those of 
+the author(s) and should not be construed as an official Government position, 
+policy, or decision, unless designated by other documentation.
+
+NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE 
+MATERIAL IS FURNISHED ON AN "AS-IS" BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO 
+WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING,
+BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY, 
+EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON 
+UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM 
+PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
+[DISTRIBUTION STATEMENT A] This material has been approved for public release 
+and unlimited distribution.  Please see Copyright notice for non-US Government 
+use and distribution.
+
+This Software includes and/or makes use of the following Third-Party Software 
+subject to its own license:
+
+1. Python 3.7 (https://docs.python.org/3/license.html) Copyright 2001-2019 
+Python Software Foundation.
+    1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), 
+    and  the Individual or Organization ("Licensee") accessing and otherwise using 
+    Python 3.7.2 software in source or binary form and its associated documentation.
+    2. Subject to the terms and conditions of this License Agreement, PSF hereby 
+    grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, 
+    analyze, test, perform and/or display publicly, prepare derivative works, 
+    distribute, and otherwise use Python 3.7.2 alone or in any derivative version, 
+    provided, however, that PSF's License Agreement and PSF's notice of copyright, 
+    i.e., "Copyright © 2001-2019 Python Software Foundation; All Rights Reserved" 
+    are retained in Python 3.7.2 alone or in any derivative version prepared by 
+    Licensee.
+
+    3. In the event Licensee prepares a derivative work that is based on or 
+    incorporates Python 3.7.2 or any part thereof, and wants to make the derivative 
+    work available to others as provided herein, then Licensee hereby agrees to 
+    include in any such work a brief summary of the changes made to Python 3.7.2.
+
+    4. PSF is making Python 3.7.2 available to Licensee on an "AS IS" basis.   
+    PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF   
+    EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR  
+    WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE  
+    USE OF PYTHON 3.7.2 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+
+    5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 3.7.2 FOR 
+    ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF 
+    MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 3.7.2, OR ANY DERIVATIVE 
+    THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
+
+    6. This License Agreement will automatically terminate upon a material breach of 
+    its terms and conditions.
+
+    7. Nothing in this License Agreement shall be deemed to create any relationship 
+    of agency, partnership, or joint venture between PSF and Licensee.  This License 
+    Agreement does not grant permission to use PSF trademarks or trade name in a 
+    trademark sense to endorse or promote products or services of Licensee, or any 
+    third party.
+
+    8. By copying, installing or otherwise using Python 3.7.2, Licensee agrees to be 
+    bound by the terms and conditions of this License Agreement.
+    
+2. SQL Alchemy (https://github.com/sqlalchemy/sqlalchemy/blob/master/LICENSE) 
+Copyright 2005-2019 SQLAlchemy authors and contributor.
+    Permission is hereby granted, free of charge, to any person obtaining a copy of 
+    this software and associated documentation files (the "Software"), to deal in 
+    the Software without restriction, including without limitation the rights to 
+    use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies 
+    of the Software, and to permit persons to whom the Software is furnished to do 
+    so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all 
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR 
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER 
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+DM19-0055

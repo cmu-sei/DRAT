@@ -1,0 +1,12 @@
+<!doctype html>
+<title>RPM File Match Inspector</title>
+<page>
+{% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+{% endfor %}
+{% block body %}{% endblock %}
+</page>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+{% block script %}{% endblock %}

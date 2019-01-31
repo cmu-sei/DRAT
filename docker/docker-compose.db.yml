@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  dbutils:
+    links:
+      - db
+    build:
+      context: ../
+      dockerfile: docker/dbutils/Dockerfile
+    volumes:
+      - ../docker/pg_backup:/data
+    networks:
+    - iac
+
+

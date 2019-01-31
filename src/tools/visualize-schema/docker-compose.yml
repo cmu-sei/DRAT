@@ -1,0 +1,14 @@
+version: '3'
+services:
+    vis:
+      build: .
+      volumes:
+        - .:/data
+      environment:
+        DOCKER: "true"
+      command: bash ./vis
+
+networks:
+  default:
+    external: 
+      name: docker_iac

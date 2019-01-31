@@ -1,0 +1,3 @@
+#!
+cd /data
+eralchemy -i postgresql://iac:ia-code@db/iacode -o schema.pdf

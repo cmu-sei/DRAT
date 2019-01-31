@@ -1,0 +1,55 @@
+{% extends "layout.j2" %}
+{% block body %}
+<form action="{{ url_for('receive_match') }}" method="post" enctype="multipart/form-data" class="file-upload">
+    <dl>
+        <dt>System:
+        <dd><select name="system">
+                <option value="not_selected">Please choose system</option>
+                {% for system in systems %}
+                <option value="{{ system.system_id }}">{{ system.name }}</option>
+                {% endfor %}
+            </select>
+        <dt>RPM File:
+        <dd><input type="file" name="file">
+        <dt><input type="submit" value="Upload RPM File">
+    </dl>
+</form>
+<div class="loading" style="visibility: hidden;">
+    <img src="{{ url_for('static', filename='ajax-loader.gif') }}" />
+</div>
+<div class="result">
+</div>
+{% endblock %}
+{% block script %}
+<script type="text/javascript">
+$('document').ready(function () {
+    $('.file-upload').on('submit', function(e){
+        e.preventDefault();
+
+        var loading = $('.loading');
+        loading.css('visibility', 'visible');
+        var results = $('.result');
+        results.html('');
+
+        var form = $(this);
+        url = form.attr('action');
+
+        var formData = new FormData(this);
+
+        post = $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            cache: false,
+            processData: false
+        });
+
+        post.done(function(payload){
+            loading.css('visibility', 'hidden');
+            results.html(payload);
+        });
+    })
+})
+</script>
+{% endblock %}

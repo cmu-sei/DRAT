@@ -1,0 +1,70 @@
+version: '3'
+services:
+  db:
+    container_name: iac_postgres
+    build:
+      context: ./
+      dockerfile: db/Dockerfile
+    environment:
+      POSTGRES_USER: iac
+      POSTGRES_PASSWORD: ia-code
+      POSTGRES_DB: iacode
+    entrypoint: 
+      - /bin/bash
+      - /docker_pg_wrapper.sh
+    volumes:
+      - db-datavol:/var/lib/postgresql
+      - ./pg_backup:/data
+      - ./db/sql:/docker-entrypoint-initdb.d
+    ports:
+      - 5432:5432
+    networks:
+      - iac
+
+  web:
+    container_name: iac_rpmatcher
+    build:
+      context: ../
+      dockerfile: docker/rpm_analysis/Dockerfile
+    image: rpmatcher:latest
+    restart: "no"
+    environment:
+      DOCKER: "true"
+    volumes:
+      - ../src:/src
+    ports:
+      - 5000:5000
+    networks:
+      - iac
+
+  webapi:
+    container_name: iac_rpmatcher_api
+    build:
+      context: ../
+      dockerfile: docker/rpm_analysis_api/Dockerfile
+    image: rpmatcher_api:latest
+    restart: "no"
+    environment:
+      DOCKER: "true"
+      DOCKER_DEV: 1
+      # Add if you need to debug from PyCharm/Intellij
+      # PYTHONPATH: /app/pycharm-debug.egg:/src
+      FLASK_APP: /src/rpmatcher/rpmatcher_api.py
+      FLASK_PORT: 5001
+      FLASK_HOST: "0.0.0.0"
+      FLASK_DEBUG: 1
+    volumes:
+      - webapi-datavol:/data
+      - ../src:/src
+    ports:
+      - 5001:5001
+    networks:
+      - iac
+
+volumes:
+  db-datavol:
+  webapi-datavol:
+  
+networks:
+  iac:
+    driver: bridge
