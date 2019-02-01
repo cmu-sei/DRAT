@@ -1,4 +1,4 @@
-#DRAT - Design Recovery Automation Technology
+# DRAT - Design Recovery Automation Technology
 
 See [this white paper](https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=539327) for information about the project.
 
