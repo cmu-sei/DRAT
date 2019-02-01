@@ -1,6 +1,9 @@
-#IaC LENS Project README
+#DRAT - Design Recovery Automation Technology
 
-# alembic migrations
+See [this white paper](https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=539327) for information about the project.
+
+
+# Getting Started - alembic migrations
 ## Initial configuration
 
 There is a shell script in the base of the repo called `dbutil.sh`.  It will handle the db migrations inside of a Docker container.
