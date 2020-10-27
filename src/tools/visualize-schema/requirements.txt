@@ -1,7 +1,7 @@
 asn1crypto==0.23.0
 bcrypt==3.1.4
 cffi==1.11.2
-cryptography==2.1.2
+cryptography==3.2
 idna==2.6
 paramiko==2.3.1
 psycopg2==2.7.3.2
